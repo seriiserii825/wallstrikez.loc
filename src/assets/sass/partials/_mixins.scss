@@ -1,0 +1,47 @@
+/* fonts
+====================================================*/
+@mixin font-face($font-family, $file-path, $weight: normal, $style: normal) {
+    @font-face {
+        font-family: $font-family;
+        font-weight: $weight;
+        font-style: $style;
+        src: url('#{$file-path}.eot');
+        src: url('#{$file-path}.eot?#iefix') format('embedded-opentype'), url('#{$file-path}.woff') format('woff'), url('#{$file-path}.ttf') format('truetype');
+    }
+}
+
+@mixin calibri() {
+    font-family: "Calibri", sans-serif;
+    font-weight: normal;
+}
+
+@mixin calibri-bold(){
+    font-family: "Calibri", sans-serif;
+    font-weight: bold;
+}
+
+@mixin lato() {
+    font-family: "Lato", sans-serif;
+    font-weight: normal;
+}
+
+@mixin lato-black(){
+    font-family: "Lato Black", sans-serif;
+    font-family: 900;
+}
+
+@mixin lato-bold() {
+    font-family: "Lato", sans-serif;
+    font-weight: bold;
+}
+
+@mixin lato-italic() {
+    font-family: "Lato", sans-serif;
+    font-style: italic;
+}
+
+@mixin lato-bold-italic() {
+    font-family: "Lato", sans-serif;
+    font-weight: bold;
+    font-style: italic;
+}
